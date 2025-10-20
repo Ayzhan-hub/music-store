@@ -22,6 +22,7 @@ function RegisterPage() {
     e.preventDefault();
     setLoading(true);
     try {
+      console.log(login, email, password);
       const response = await registerUser(login, email, password);
       if (response.status === 200 || response.status === 201) {
         setMessage("Регистрация прошла успешно! Переход на страницу входа...");

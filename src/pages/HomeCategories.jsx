@@ -39,11 +39,10 @@ function HomeCategories() {
       {loading && <Loader />}
       <div className="categories__list">
         {categories.map((item, index) => (
-          <div className="category-card-wrapper">
+          <div className="category-card-wrapper" key={index}>
             <Link
               to={`/products`}
               onClick={() => pickCategory(item.type)}
-              key={index}
               className="category-card-home"
             >
               <img
