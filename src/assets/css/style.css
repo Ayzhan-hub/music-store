@@ -1,0 +1,17 @@
+@import "./lib/reset.css";
+@import "./lib/variables.css";
+
+@import "./sections/header.css";
+@import "./sections/footer.css";
+@import "./pages/homepage.css";
+@import "./pages/register.css";
+@import "./pages/login.css";
+@import "./sections/pagination.css";
+@import "./components/loader.css";
+@import "./components/homeCategories.css";
+@import "./components/homeContacts.css";
+@import "./pages/cartPage.css";
+@import "./pages/LoginPage.css";
+@import "./sections/homeAbout.css";
+@import "./pages/profile.css";
+@import "./sections/products.css";

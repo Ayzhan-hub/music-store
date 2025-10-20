@@ -1,0 +1,32 @@
+.profile {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.profile__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile__card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #f9f9f9;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__info p {
+  margin: 8px 0;
+}

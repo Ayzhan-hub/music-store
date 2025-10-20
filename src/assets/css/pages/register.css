@@ -1,0 +1,102 @@
+.register {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.register__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: var(--color-secondary);
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register__input {
+  padding: 12px 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: border var(--transition), box-shadow var(--transition);
+}
+
+.register__input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.15);
+  outline: none;
+}
+
+.register__button {
+  padding: 12px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.register__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.register__message {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.register__message.success {
+  color: green;
+}
+
+.register__message.error {
+  color: red;
+}
+
+.register__text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.register__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.register__link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

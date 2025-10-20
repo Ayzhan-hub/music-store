@@ -1,0 +1,15 @@
+:root {
+  --font-main: "Inter", "Arial", sans-serif;
+
+  --color-primary: #ff6a00;
+  --color-primary-hover: #e65c00;
+  --color-secondary: #222;
+  --color-bg: #f4f5f7;
+  --color-white: #ffffff;
+  --color-gray: #777;
+  --color-border: #ddd;
+
+  --container-width: 1200px;
+  --transition: 0.3s ease;
+  --radius: 8px;
+}

@@ -1,0 +1,70 @@
+.homepage__banner-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 6;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.homepage__banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.homepage__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #fff;
+}
+
+.homepage__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.homepage__desc {
+  font-size: 1rem;
+  max-width: 500px;
+  line-height: 1.4;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .homepage__overlay {
+    padding: 20px;
+  }
+
+  .homepage__title {
+    font-size: 1.5rem;
+  }
+
+  .homepage__desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage__banner-section {
+    aspect-ratio: 16 / 9;
+  }
+
+  .homepage__title {
+    font-size: 1.2rem;
+  }
+
+  .homepage__desc {
+    font-size: 0.8rem;
+  }
+}
